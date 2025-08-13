@@ -1,0 +1,77 @@
+:root {
+  /* font-family: "Anton SC", serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  --primary-color: hsl(209, 80%, 44%);
+  --secondary-color: hsl(204, 100%, 74%);
+  --link-color: #5f6368;
+  --text-color: black;
+  --body-color: #a2d4f5;
+  --svg-color: #5f6368;
+  --sun-color: #FED330;
+  --shadown: #ffffffcc;
+}
+
+#root {
+  height: 100%;
+  min-height: 100dvh;;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-color);
+  min-width: 390px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+svg, path{
+  height: 100%;
+  width: auto;
+}
+
+
+
+body, svg, a {
+  transition: background-color 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary-color);
+}
