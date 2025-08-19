@@ -9,6 +9,7 @@ import { ReactComponent as PHP } from "../../assets/tech/php.svg";
 import { ReactComponent as GitHub } from "../../assets/contact/github.svg";
 import { ReactComponent as Internet } from "../../assets/contact/internet.svg";
 import { ReactComponent as Java } from "../../assets/tech/java.svg";
+import { ReactComponent as SQL } from "../../assets/tech/sql.svg";
 //import { ReactComponent as AndroidStudio } from "../../assets/tech/android.svg";
 
 const Projects = () => {
@@ -59,6 +60,32 @@ const Projects = () => {
         {
           name: "MySQL",
           icon: <MySQL className={styles.svg} />,
+        },
+      ],
+      type: "demo",
+    },
+    {
+      img: "next",
+      name: "Gestion de Procesos - GSP",
+      github: "https://github.com/fechoritas/",
+      description:
+        "Creacion de sistema para la gestion de procesos en un almacen ",
+      techs: [
+        {
+          name: "PHP",
+          icon: <PHP className={styles.svg} />,
+        },
+        {
+          name: "JavaScript",
+          icon: <Java className={styles.svg} />,
+        },
+        {
+          name: "Node.js",
+          icon: <Node className={styles.svg} />,
+        },
+        {
+          name: "SQL",
+          icon: <SQL className={styles.svg} />,
         },
       ],
       type: "demo",
