@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  height: 100%;
+}
+
+.link {
+  width: 32px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  svg {
+    padding: 2px;
+    border-radius: 50%;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    position: fixed;
+    width: fit-content;
+    span {
+      display: none;
+    }
+  }
+}
